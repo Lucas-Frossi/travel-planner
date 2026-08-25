@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: travel-planner
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/travel_planner
+    username: root
+    password: REMOVED_SECRET
