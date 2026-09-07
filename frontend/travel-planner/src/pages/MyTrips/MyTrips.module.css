@@ -1,0 +1,248 @@
+.myTrips {
+    min-height: 100vh;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
+}
+
+.pageHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.pageHeader h1 {
+    margin: 0 0 6px;
+    color: #163b5c;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pageHeader p {
+    margin: 0;
+    color: #7890a3;
+    font-size: 12px;
+}
+
+.filters {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e5ebf0;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.filters h2 {
+    margin: 0 0 18px;
+    color: #163b5c;
+    font-size: 16px;
+}
+
+.filterFields {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.filterFields > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filterFields label {
+    color: #526879;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.filterFields input,
+.filterFields select {
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #dce4ea;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    color: #526879;
+    font-size: 11px;
+}
+
+.filterFields input:focus,
+.filterFields select:focus {
+    border-color: #2d6a9f;
+}
+
+.filterActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.filterActions button {
+    height: 36px;
+    padding: 0 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.filterActions button[type="submit"] {
+    border: 1px solid #1f5685;
+    background-color: #1f5685;
+    color: #ffffff;
+}
+
+.filterActions button[type="button"] {
+    border: 1px solid #d1dbe2;
+    background-color: #ffffff;
+    color: #526879;
+}
+
+.tripsSection h2 {
+    margin: 0 0 16px;
+    color: #163b5c;
+    font-size: 16px;
+}
+
+.tripsList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tripCard {
+    overflow: hidden;
+    padding: 9px;
+    border: 1px solid #e4e9ed;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
+}
+
+.tripCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tripImage {
+    display: block;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tripHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+
+.tripHeader h3 {
+    margin: 0;
+    color: #163b5c;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.optionsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #526879;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.optionsButton:hover {
+    color: #163b5c;
+}
+
+.tripDates {
+    margin: 4px 0 9px;
+
+    color: #8a9aa8;
+    font-size: 9px;
+}
+
+.tripType {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.leisure {
+    background-color: #dff0ff;
+    color: #3476a9;
+}
+
+.business {
+    background-color: #dff3e7;
+    color: #39805b;
+}
+
+.budget {
+    margin: 10px 0 2px;
+    color: #526879;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.pageLayout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.myTrips,
+.createTrip {
+    flex: 1;
+    padding: 32px;
+}
+
+.optionsWrapper {
+    position: relative;
+}
+
+.optionsMenu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 4px 0;
+    z-index: 10;
+    min-width: 120px;
+}
+
+.optionsMenu li button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.optionsMenu li button:hover {
+    background: #f2f2f2;
+}

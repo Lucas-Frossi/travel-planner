@@ -1,0 +1,79 @@
+.footer {
+    width: 100%;
+    padding: 24px 30px 30px;
+    box-sizing: border-box;
+    background-color: #fffdf9;
+}
+
+.benefitsSection {
+    width: 100%;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.icon img {
+    display: block;
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+}
+
+.travelIcon {
+    background-color: #dceefa;
+}
+
+.destinationIcon {
+    background-color: #f1f0c9;
+}
+
+.budgetIcon {
+    background-color: #dff3e9;
+}
+
+.experienceIcon {
+    background-color: #fbded9;
+}
+
+.benefit h3 {
+    margin: 0 0 7px;
+    color: #173f60;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.benefit p {
+    margin: 0;
+    color: #526b7e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.45;
+}
