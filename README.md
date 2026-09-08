@@ -1,45 +1,128 @@
 # ✈️ Travel Planner
 
-Sistema para planejamento e gerenciamento de viagens, permitindo que usuários cadastrem, organizem e visualizem suas viagens e destinos de forma simples e intuitiva.
+Sistema web desenvolvido para facilitar o planejamento e a organização de viagens.
 
-## 📋 Sobre o Projeto
+O Travel Planner permite cadastrar viagens, consultar as viagens cadastradas e realizar filtros de acordo com as informações da viagem.
 
-O **Travel Planner** é uma aplicação web desenvolvida para auxiliar usuários no planejamento e gerenciamento de suas viagens.
+---
 
-Para utilizar a aplicação, o usuário deverá realizar um **cadastro** e, posteriormente, efetuar o **login** para acessar suas funcionalidades.
+## 📋 Sobre o projeto
 
-Após a autenticação, será possível cadastrar viagens, visualizar os registros, editar informações e acompanhar os destinos planejados.
+O Travel Planner foi desenvolvido com o objetivo de criar uma aplicação integrada entre **frontend e backend**, permitindo o gerenciamento de informações de viagens por meio de uma API REST.
 
-## ✨ Funcionalidades
+A aplicação é composta por:
 
-### 🔐 Autenticação
+- **Frontend:** React
+- **Backend:** Java + Spring Boot
+- **Banco de dados:** MySQL
+- **Persistência:** JdbcTemplate
+- **Banco em ambiente de desenvolvimento:** Docker
 
-* Cadastro de usuário
-* Login de usuário
-* Acesso às funcionalidades mediante autenticação
+---
 
-### ✈️ Viagens
+## 🚀 Funcionalidades
 
-* Cadastrar uma nova viagem
-* Informar os dados da viagem
-* Visualizar viagens cadastradas
-* Editar informações de uma viagem
-* Remover uma viagem
-* Visualizar detalhes de cada viagem
-* Organizar e acompanhar os destinos planejados
+### 🧳 Viagens
 
-## 🛠️ Tecnologias Utilizadas
+- Cadastrar uma nova viagem
+- Listar viagens cadastradas
+- Filtrar viagens
+- Informar destino
+- Informar data de ida
+- Informar data de volta
+- Informar orçamento
+- Classificar o tipo da viagem
 
-* **Java** – desenvolvimento da API REST
-* **Spring Boot** – estrutura do back-end
-* **JDBC** – conexão e manipulação do banco de dados
-* **SQL** – modelagem e consultas ao banco de dados
-* **MySQL** – banco de dados
-* **React** – desenvolvimento da interface
-* **JavaScript** – lógica da aplicação
-* **HTML/CSS** – estrutura e estilização da interface
-* **Docker** – gerenciamento e execução dos ambientes
+### 🔎 Filtros
 
-## 📄 Licença
+É possível consultar as viagens utilizando os seguintes filtros:
 
-Este projeto é de uso acadêmico/pessoal.
+- Destino
+- Data de ida
+- Data de volta
+- Orçamento
+- Tipo de viagem
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+### Frontend
+
+- React
+- JavaScript
+- JSX
+- React Router
+- Axios
+- CSS Modules
+- Vite
+
+### Backend
+
+- Java
+- Spring Boot
+- JdbcTemplate
+- Maven
+
+### Banco de dados
+
+- MySQL 8.0
+- Docker
+- Docker Compose
+
+### Versionamento
+
+- Git
+- GitHub
+
+---
+
+## 📁 Estrutura do projeto
+
+```text
+travel-planner/
+│
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── school/
+│   │   │   │       └── sptech/
+│   │   │   │           └── travelplanner/
+│   │   │   │               ├── controllers/
+│   │   │   │               ├── enums/
+│   │   │   │               ├── models/
+│   │   │   │               ├── repositories/
+│   │   │   │               └── validations/
+│   │   │   │
+│   │   │   └── resources/
+│   │   │       └── data.sql
+│   │   │
+│   │   └── test/
+│   │
+│   ├── docker-compose.yml
+│   ├── entemplate.env
+│   └── pom.xml
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Footer/
+│   │   │   ├── Header/
+│   │   │   └── Sidebar/
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home/
+│   │   │   ├── MyTrips/
+│   │   │   └── CreateTrip/
+│   │   │
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── docs/
+│   └── DOCUMENTACAO_TECNICA.md
+│
+└── README.md
