@@ -157,10 +157,10 @@ travel-planner/
 
 O banco de dados utiliza variáveis de ambiente para configuração.
 
-O projeto possui o arquivo:
+O projeto possui o arquivo como exemplo:
 
 ```text
-backend/entemplate.env
+docs/.env.template
 ```
 
 Modelo:
